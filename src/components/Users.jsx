@@ -21,7 +21,7 @@ const Users = () => {
                 Click
             </button>
             <h1>Users</h1>
-            <div className="row">
+            <div className="row gap-3 mx-auto">
                 {users.map((user) => {
                     // console.log(user);
                     const { id, login, avatar_url } = user;
@@ -30,7 +30,7 @@ const Users = () => {
                             <div className="card" style={{ width: "18rem" }}>
                                 <img
                                     src={avatar_url}
-                                    className="card-img-top"
+                                    className="card-img-top rounded-circle"
                                     alt="..."
                                 />
                                 <div className="card-body">
