@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const Users = () => {
     const [users, setUsers] = useState([]);
+    const [first, setfirst] = useState(second)
 
     const getData = () => {
         const url = "https://api.github.com/users";
@@ -10,9 +11,10 @@ const Users = () => {
             .then((data) => setUsers(data));
     };
     // console.log(users);
-
+    
     useEffect(() => {
         getData();
+        
     }, []);
 
     return (
