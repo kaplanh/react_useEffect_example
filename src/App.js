@@ -2,6 +2,7 @@ import LifeCycleMethods from "./components/LifeCycleMethods";
 import { useState } from "react";
 import UseEffectHook from "./components/UseEffectHook";
 import Users from "./components/Users";
+import UsersExample from "./components/UsersExample";
 
 function App() {
     const [show, setShow] = useState(true);
@@ -16,7 +17,8 @@ function App() {
             {/* {show && <LifeCycleMethods />} */}
             {/* {show ? <LifeCycleMethods /> : null} */}
             {/* {show && <UseEffectHook/>} */}
-            <Users />
+            {/* <Users /> */}
+            <UsersExample />
         </div>
     );
 }
